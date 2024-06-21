@@ -1,3 +1,20 @@
+# Contact Profile System
+
+This project is a simple contact profile system built with React. It allows you to create, delete, and update profile records, storing them in the local storage.
+
+## Features
+
+- A list panel to display all the contacts created.
+- A form for creating contacts.
+- A delete button on each contact in the list panel to remove the contact.
+
+## Usage
+Add Contact: Fill in the name and email fields in the form and click "Add Contact".
+Delete Contact: Click the "Delete" button next to a contact in the contact list to remove it.
+View Contacts: All contacts are displayed in the contact list below the form.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
