@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { ContactProvider } from './component/context/contactContext';
+import ContactForm from './component/Form';
+import ContactList from './component/contactList';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+const App = () => {
+    return (
+        <ContactProvider>
+            <div className="App">
+                <h1 className='w-1/2 font-bold font-mono m-auto my-5 text-3xl'>Contact Profile System</h1>
+                <ContactForm />
+                <ContactList />
+            </div>
+        </ContactProvider>
+    );
+};
 
 export default App;
